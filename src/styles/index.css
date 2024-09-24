@@ -3,9 +3,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    min-height: 350px;
+    height: fit-content;
     width: 350px;
-    background-color: beige;
+    background-color: white;
     border: 1px solid lightgrey;
     box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.5);
 
@@ -13,24 +13,20 @@
 }
 
 .sheet{
-    background-color: beige;
+    background-color: white;
     position: absolute;
     top: 48%;
     left: 50%;
     transform: translate(-50%,-50%);
-    min-height: 101%;
+    min-height: 102%;
     width: 103%;
     border: 1px solid lightgrey;
     box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.5);
     
 }
 
-.todo-footer{
-  margin-top: auto; 
-  padding: 10px 0;
-  text-align: center;
-  border-top: 1px solid #dee2e6;
-}
+
+
 
 /* Inicialmente ocultamos el botón */
 .delete-btn {
@@ -53,10 +49,20 @@ div.list-item:hover .delete-btn {
   overflow-wrap: anywhere;
   border-bottom: 1px solid lightgrey;
   border-top: 1px solid lightgrey;
+  font-size: 1.3rem;
+}
+
+.list-item:last-child:not(#todoFooter){
+  border-bottom: none;
 }
 
 .title{
   font-weight: lighter;
   color: pink;
   font-size: 2.5rem;
+}
+
+#todoFooter{
+  font-size: 0.85rem;
+  border-bottom: none;
 }

@@ -8,7 +8,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 
 
 const Home = () => {
-	const [todos, setTodos] = useState(["Arremangala Arrempujala", "azuca"])
+	
 	return (
 		<div className="d-flex justify-content-center ">
 		<TodoList />	

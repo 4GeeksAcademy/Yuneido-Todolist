@@ -10,7 +10,7 @@ const TodoList = () => {
   const createTodos = (value, index) => {
     return (
       <div
-      className="list-item d-flex justify-content-between"
+      className="list-item d-flex justify-content-between text-secondary"
         key={index}
         itemID={index}
       >
@@ -64,7 +64,7 @@ const deleteTodo = (e) =>{
                   </h1>
                 </div>
               )}
-            <div className="list-item text-secondary todo-footer">
+            <div className="list-item text-secondary todo-footer" id="todoFooter">
               {todos.length > 0
                 ? `${todos.length} ${
                     todos.length === 1 ? "item" : "items"
