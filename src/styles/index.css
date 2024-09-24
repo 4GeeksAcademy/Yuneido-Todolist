@@ -1,12 +1,62 @@
+.main-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-height: 350px;
+    width: 350px;
+    background-color: beige;
+    border: 1px solid lightgrey;
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.5);
 
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+}
 
-*/
+.sheet{
+    background-color: beige;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-height: 101%;
+    width: 103%;
+    border: 1px solid lightgrey;
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.5);
+    
+}
+
+.todo-footer{
+  margin-top: auto; 
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Inicialmente ocultamos el botón */
+.delete-btn {
+    display: none; 
+  }
+  
+  /* Mostramos el botón solo cuando pasamos el mouse sobre la fila */
+div.list-item:hover .delete-btn {
+    display: block; 
+  }
+
+
+.list-item{
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+  height: 50px;
+  width: 99%;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
+}
+
+.title{
+  font-weight: lighter;
+  color: pink;
+  font-size: 2.5rem;
+}
